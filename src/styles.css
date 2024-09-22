@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Karla, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #28282d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    padding: 2rem;
+}
+
+.title {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.settings {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 2rem;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+}
+
+.amount span {
+    min-width: 1.5rem;
+}
+
+.display {
+    padding: 1rem;
+    text-align: center;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.display--mode {
+    font-size: 1.2rem;
+}
+
+.display--time {
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+
+.controls {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.controls--restart,
+.amount--dec,
+.amount--inc {
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.controls--resumePause {
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.emphasize {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.inSession {
+    color: #ed2c2c;
+}
+
+.onBreak {
+    color: #3dd03a;
+}
